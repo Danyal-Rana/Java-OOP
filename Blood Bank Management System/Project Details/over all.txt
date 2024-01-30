@@ -1,0 +1,18 @@
+We have three main classes: BloodDonor, BloodReceiver, and BloodBank.
+
+The BloodDonor class represents a blood donor and stores information such as their name, blood group, age, and hepatitis status.
+The BloodReceiver class represents a blood receiver and stores information such as their name, blood group, and age.
+The BloodBank class is responsible for managing donors, receivers, and blood inventory.
+The BloodBank class has various methods:
+
+addDonor and addReceiver methods are used to add new donors and receivers to the blood bank.
+loadDonorsFromFile and loadReceiversFromFile methods load donor and receiver data from text files, respectively. The data should be stored in a specific format (e.g., name, blood group, age).
+saveDonorsToFile and saveReceiversToFile methods save donor and receiver data to text files, respectively.
+adjustInventory method is used to update the blood inventory. It takes a blood group and the amount of change (e.g., +1 for donation, -1 for usage) and adjusts the inventory accordingly.
+The BloodBankManagementSystem class is the main entry point for the program.
+
+It creates an instance of the BloodBank class.
+It calls the loadDonorsFromFile and loadReceiversFromFile methods to load donor and receiver data from files.
+It performs other operations on the blood bank if needed.
+Finally, it calls the saveDonorsToFile and saveReceiversToFile methods to save the updated donor and receiver data back to the files.
+Overall, this code allows you to manage a blood bank by adding donors and receivers, loading and saving data from files, and updating the blood inventory based on donations and usages.

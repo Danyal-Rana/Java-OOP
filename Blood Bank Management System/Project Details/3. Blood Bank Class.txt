@@ -1,0 +1,20 @@
+The `BloodBank` class represents a blood bank and manages the blood donors, receivers, and blood inventory. It has the following attributes:
+
+1. `donors`: It is a list that stores the instances of `BloodDonor` objects, representing the blood donors.
+2. `receivers`: It is a list that stores the instances of `BloodReceiver` objects, representing the blood receivers.
+3. `inventory`: It is a map that stores the count of available blood groups in the blood bank.
+
+The `BloodBank` class provides the following methods:
+
+1. `addDonor()`: It adds a `BloodDonor` object to the list of donors and updates the inventory accordingly.
+2. `addReceiver()`: It adds a `BloodReceiver` object to the list of receivers.
+3. `getAvailableBloodGroups()`: It returns the map of available blood groups and their corresponding counts.
+4. `saveDonorsToFile()`: It saves the donor information to a file.
+5. `saveReceiversToFile()`: It saves the receiver information to a file.
+6. `loadDonorsFromFile()`: It loads the donor information from a file.
+7. `loadReceiversFromFile()`: It loads the receiver information from a file.
+8. `printDonors()`: It prints the details of all the blood donors.
+9. `printReceivers()`: It prints the details of all the blood receivers.
+10. `printAvailableBloodGroups()`: It prints the available blood groups and their counts.
+
+The `BloodBank` class helps manage the blood donation and reception processes by allowing the addition of donors and receivers, maintaining an inventory of available blood groups, and providing functionality to save and load data from files.

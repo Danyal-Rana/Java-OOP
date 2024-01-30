@@ -1,0 +1,19 @@
+The `BloodDonor` class represents a blood donor and has the following attributes:
+
+1. `name`: It stores the name of the blood donor.
+2. `bloodGroup`: It stores the blood group of the donor (e.g., A+, B-, AB+).
+3. `age`: It stores the age of the donor.
+4. `hepatitisPositive`: It stores a boolean value indicating whether the donor is hepatitis positive or not.
+
+The `BloodDonor` class also has the following methods:
+
+1. `getName()`: It returns the name of the blood donor.
+2. `getBloodGroup()`: It returns the blood group of the donor.
+3. `getAge()`: It returns the age of the donor.
+4. `isHepatitisPositive()`: It returns a boolean value indicating whether the donor is hepatitis positive or not.
+
+Additionally, the class has an overridden `toString()` method that provides a string representation of the `BloodDonor` object, including all the attribute values.
+
+The constructor of the `BloodDonor` class takes the name, blood group, age, and hepatitis status as parameters and initializes the respective attributes.
+
+Overall, the `BloodDonor` class encapsulates the data and behavior related to a blood donor, allowing you to create and access donor objects, retrieve their information, and determine their hepatitis status.

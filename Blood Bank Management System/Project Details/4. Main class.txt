@@ -1,0 +1,27 @@
+The `BloodBankManagementSystem` class is the main class that contains the `main` method. It serves as the entry point of the program and orchestrates the interactions with the blood bank system.
+
+Here's how the `main` method in the `BloodBankManagementSystem` class works:
+
+1. It creates an instance of the `BloodBank` class, which represents the blood bank system.
+2. It displays a welcome message and presents the user with a menu of options: to act as a donor or receiver.
+3. The user is prompted to enter their choice (1 for donor, 2 for receiver).
+4. Depending on the user's choice, different actions are performed:
+   - If the user chooses 1 (donor):
+     - The user is prompted to enter their name, age, blood group, and whether they are hepatitis positive.
+     - A `BloodDonor` object is created with the provided information.
+     - If the donor is not hepatitis positive, the donor is added to the blood bank system using the `addDonor` method of the `BloodBank` class.
+     - The donor's information is saved to a file using the `saveDonorsToFile` method of the `BloodBank` class.
+     - A success message is displayed.
+   - If the user chooses 2 (receiver):
+     - The user is prompted to enter their name, age, and the required blood group.
+     - The `BloodReceiver` object is created with the provided information.
+     - The receiver is added to the blood bank system using the `addReceiver` method of the `BloodBank` class.
+     - The receiver's information is saved to a file using the `saveReceiversToFile` method of the `BloodBank` class.
+     - A success message is displayed.
+   - If the user enters an invalid choice, an error message is displayed.
+5. The blood bank system then loads the donor and receiver information from the respective files using the `loadDonorsFromFile` and `loadReceiversFromFile` methods of the `BloodBank` class.
+6. The blood bank system displays the available blood groups and their counts using the `printAvailableBloodGroups` method of the `BloodBank` class.
+7. The blood bank system displays the received blood groups and their counts using the `printReceivedBloodGroups` method of the `BloodBank` class.
+8. The program execution ends.
+
+The `BloodBankManagementSystem` class acts as a controller that interacts with the user, creates objects, and delegates the operations to the `BloodBank` class to handle the blood donation and reception processes.
